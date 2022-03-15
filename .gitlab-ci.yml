@@ -1,0 +1,18 @@
+variables:
+  DEBFULLNAME: "Garden Linux builder"
+  DEBEMAIL: "contact@gardenlinux.io"
+  BUILD_ARCH_ALL: 'true'
+  BUILD_ARCH_AMD64: 'true'
+  BUILD_ARCH_ARM64: ''
+  SOURCE_REPO: 'https://github.com/FRRouting/frr'
+  SOURCE_VERSION: '8.2.2'
+  SOURCE_REPO_REF: 'frr-8.2.2'
+  SOURCE_NAME: 'frr'
+  BUILD_SIGNED: ''
+
+
+include:
+- project: gardenlinux/gardenlinux-package-build
+  ref: git-source
+  file:
+  - pipeline/pipeline.yml
