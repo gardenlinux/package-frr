@@ -11,6 +11,5 @@ variables:
 
 include:
 - project: gardenlinux/gardenlinux-package-build
-  ref: git-source
   file:
   - pipeline/pipeline.yml
