@@ -4,12 +4,13 @@ variables:
   BUILD_ARCH_ALL: 'true'
   BUILD_ARCH_AMD64: 'true'
   BUILD_ARCH_ARM64: ''
-  SOURCE_REPO: 'https://github.com/FRRouting/frr'
-  SOURCE_REPO_REF: 'frr-8.2.2'
+  SOURCE_NAME: 'frr'
+  ORIG_TAR: 'frr_8.2.2.orig.tar.xz'
   BUILD_SIGNED: ''
 
 
 include:
 - project: gardenlinux/gardenlinux-package-build
+  ref: source-from-pristine-lfs
   file:
   - pipeline/pipeline.yml
