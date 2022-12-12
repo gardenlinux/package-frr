@@ -1,15 +1,9 @@
-variables:
-  DEBFULLNAME: "Garden Linux builder"
-  DEBEMAIL: "contact@gardenlinux.io"
-  BUILD_ARCH_ALL: 'true'
-  BUILD_ARCH_AMD64: 'true'
-  BUILD_ARCH_ARM64: ''
-  SOURCE_NAME: 'frr'
-  ORIG_TAR: 'frr_8.3.orig.tar.xz'
-  BUILD_SIGNED: ''
-
-
 include:
-- project: gardenlinux/gardenlinux-package-build
-  file:
-  - pipeline/pipeline.yml
+  project: gardenlinux/gardenlinux-package-build
+  file: pipeline/pipeline-git.yml
+
+variables:
+  SOURCE_NAME: frr
+  SOURCE_REPO: https://github.com/FRRouting/frr.git
+  SOURCE_TAG_PREFIX: frr-
+  BUILD_ARCH_ALL: 'true'
