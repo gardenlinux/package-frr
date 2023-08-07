@@ -1,9 +1,11 @@
 include:
-  project: gardenlinux/gardenlinux-package-build
-  file: pipeline/pipeline-git.yml
+  - project: gardenlinux/gardenlinux-package-build
+    file: pipeline/pipeline-git.yml
 
 variables:
   SOURCE_NAME: frr
   SOURCE_REPO: https://github.com/FRRouting/frr.git
   SOURCE_TAG_PREFIX: frr-
   BUILD_ARCH_ALL: 'true'
+  BUILD_USE_GARDENLINUX: 'true'
+  BUILD_USE_GARDENLINUX_REPO: 'true'
