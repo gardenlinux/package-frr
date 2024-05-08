@@ -8,4 +8,3 @@ jobs:
     uses: gardenlinux/package-build/.github/workflows/build.yml@main
     with:
       release: ${{ github.ref == 'refs/heads/main' }}
-      build_dep: gardenlinux/package-libyang2 2.1.148-0gardenlinux0

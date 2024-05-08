@@ -1,2 +1,2 @@
-git_src --branch frr-9.0.2 https://github.com/FRRouting/frr
+apt_src frr
 apply_patches
