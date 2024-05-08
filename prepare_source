@@ -1,2 +1,3 @@
 apt_src frr
 apply_patches
+version_suffix=gardenlinux0
