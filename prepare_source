@@ -1,2 +1,2 @@
-apt_src frr
+git_src -b frr-10.2 https://github.com/FRRouting/frr.git
 apply_patches
