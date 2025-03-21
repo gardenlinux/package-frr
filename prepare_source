@@ -1,2 +1,3 @@
 git_src -b frr-10.3 https://github.com/FRRouting/frr.git
 apply_patches
+version_suffix=gl0
