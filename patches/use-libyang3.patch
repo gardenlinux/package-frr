@@ -1,0 +1,12 @@
+diff --color -Naur a/debian/control b/debian/control
+--- a/debian/control	2025-04-23 12:29:23
++++ b/debian/control	2025-04-23 12:32:47
+@@ -23,7 +23,7 @@
+                librtr-dev (>= 0.8.0~) <!pkg.frr.nortrlib>,
+                libsnmp-dev,
+                libssh-dev <!pkg.frr.nortrlib>,
+-               libyang2-dev (>= 2.1.128) | libyang-dev ( >= 3.0.3),
++               libyang-dev ( >= 3.0.3),
+                lsb-base,
+                pkg-config,
+                protobuf-c-compiler,
