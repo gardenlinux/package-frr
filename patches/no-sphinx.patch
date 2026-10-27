@@ -1,15 +1,11 @@
 --- a/debian/rules
 +++ b/debian/rules
-@@ -36,8 +36,11 @@
+@@ -26,7 +26,7 @@
  export PYTHON=python3
-
+ 
  %:
--	dh $@ -Bbuild --with=sphinxdoc
-+	dh $@ -Bbuild
-
-+source:
-+	:
-+
+-	dh ${@} -Bbuild --with=sphinxdoc
++	dh ${@} -Bbuild
+ 
  override_dh_auto_configure:
  	$(shell dpkg-buildflags --export=sh); \
- 	dh_auto_configure -- \
